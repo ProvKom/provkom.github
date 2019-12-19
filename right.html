@@ -1,0 +1,31 @@
+﻿<html> 
+<head> 
+<title>Правый фрейм</title>
+<style>
+</style>
+</head> 
+<body>
+	<div align="center">
+<script type="text/javascript">  
+setInterval(function () {  
+ date = new Date(),  
+ h = date.getHours(),  
+ m = date.getMinutes(),  
+ s = date.getSeconds(),  
+ h = (h < 10) ? '0' + h : h,  
+ m = (m < 10) ? '0' + m : m,  
+ s = (s < 10) ? '0' + s : s,  
+ document.getElementById('time').innerHTML = h + ':' + m + ':' + s;  
+}, 1000);
+</script>
+
+<span style="color:#7e5a25; font-size:14pt; border:2px solid #e1d4ae; background:#e8e3d4; padding:5px;">
+<span id="time">00:00:00</span>
+</span>
+	</div>
+<br>
+<div align="center">
+<a href="https://myrusakov.ru" target="_blank"><img src="https://myrusakov.ru/images/button.gif" style="border: 0; height: 31px; width: 88px;" alt="Как создать свой сайт" /></a>
+</div>
+</body>
+</html>

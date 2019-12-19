@@ -1,0 +1,68 @@
+﻿body {
+	margin:0px
+}
+.bg {
+	background-color: #234567;
+	height: 40px;
+}
+.li1 {
+  font: 10pt Arial, Helvetica, sans-serif;
+	display: inline-block;
+	padding: 13px;
+	color: white;
+	font-size: 25px;
+	position: relative;
+	bottom: 7px;	
+}
+.r1 {
+	border-radius: 10px 20px;
+	height: 50px;
+	width: 50px;
+	vspace: 5px;
+	align: top;
+}
+.container {
+  font: 10pt Arial, Helvetica, sans-serif;
+  border: 2px solid #ccc;
+  background-color: #234567;
+  color: white;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  font: 10pt Arial, Helvetica, sans-serif;
+  strong: "yes";
+  border: 2px solid white;
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font: 10pt Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+.lic img { width:300px; transition:width 0.5s ease; }
+#statya:hover img { width:500px; 
+}
